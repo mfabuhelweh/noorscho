@@ -15,13 +15,13 @@ const App: React.FC = () => {
   const [timeTogether, setTimeTogether] = useState({ years: 0, days: 0, hours: 0, mins: 0, secs: 0 });
 
   const photos = [
-    { url: 'input_file_0.png', caption: 'إطلالة ساحرة في أجمل الأمسيات' },
-    { url: 'input_file_1.png', caption: 'ذكاء وجمال يجتمعان في ملامحكِ' },
-    { url: 'input_file_2.png', caption: 'رقي وبساطة تعكس جمال روحكِ' },
-    { url: 'input_file_3.png', caption: 'إشراقة الطبيعة تكتمل بوجودكِ' },
-    { url: 'input_file_4.png', caption: 'أناقة تخطف الأنظار في كل خطوة' },
-    { url: 'input_file_5.png', caption: 'حلاوة الأيام تزداد بابتسامتكِ اللطيفة' },
-    { url: 'input_file_6.png', caption: 'حضور طاغٍ وتميز لا يشبهه أحد' },
+    { url: '/input_file_0.png', caption: 'إطلالة ساحرة في أجمل الأمسيات' },
+    { url: '/input_file_1.png', caption: 'ذكاء وجمال يجتمعان في ملامحكِ' },
+    { url: '/input_file_2.png', caption: 'رقي وبساطة تعكس جمال روحكِ' },
+    { url: '/input_file_3.png', caption: 'إشراقة الطبيعة تكتمل بوجودكِ' },
+    { url: '/input_file_4.png', caption: 'أناقة تخطف الأنظار في كل خطوة' },
+    { url: '/input_file_5.png', caption: 'حلاوة الأيام تزداد بابتسامتكِ اللطيفة' },
+    { url: '/input_file_6.png', caption: 'حضور طاغٍ وتميز لا يشبهه أحد' },
   ];
 
   useEffect(() => {
