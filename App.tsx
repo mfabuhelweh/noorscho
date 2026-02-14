@@ -25,7 +25,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     // تاريخ بداية متابعتنا أو انطلاق نور (تقريبي)
-    const startDate = new Date('2018-05-15T00:00:00');
+    const startDate = new Date('2020-05-15T00:00:00');
 
     const timer = setInterval(() => {
       const now = new Date();
