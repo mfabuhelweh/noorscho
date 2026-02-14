@@ -15,12 +15,13 @@ const App: React.FC = () => {
   const [timeTogether, setTimeTogether] = useState({ years: 0, days: 0, hours: 0, mins: 0, secs: 0 });
 
   const photos = [
-    { url: 'https://images.unsplash.com/photo-1481330043424-759f61746a48?q=80&w=1000&auto=format&fit=crop', caption: 'نور.. رمز الأناقة والرقي في كل إطلالة' },
-    { url: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1000&auto=format&fit=crop', caption: 'إبداع يتجاوز الحدود وجمال يسحر القلوب' },
-    { url: 'https://images.unsplash.com/photo-1520975954732-35dd22299614?q=80&w=1000&auto=format&fit=crop', caption: 'لحظات من التألق والتميز الدائم' },
-    { url: 'https://images.unsplash.com/photo-1534774592507-488885376ad3?q=80&w=1000&auto=format&fit=crop', caption: 'بصمة فريدة في عالم الموضة والجمال' },
-    { url: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1000&auto=format&fit=crop', caption: 'نور التي تُلهمنا لنكون أفضل دائماً' },
-    { url: 'https://images.unsplash.com/photo-1513094735237-8f2714d57c13?q=80&w=1000&auto=format&fit=crop', caption: 'فخامة الحضور وبساطة الروح' },
+    { url: 'input_file_0.png', caption: 'إطلالة ساحرة في أجمل الأمسيات' },
+    { url: 'input_file_1.png', caption: 'ذكاء وجمال يجتمعان في ملامحكِ' },
+    { url: 'input_file_2.png', caption: 'رقي وبساطة تعكس جمال روحكِ' },
+    { url: 'input_file_3.png', caption: 'إشراقة الطبيعة تكتمل بوجودكِ' },
+    { url: 'input_file_4.png', caption: 'أناقة تخطف الأنظار في كل خطوة' },
+    { url: 'input_file_5.png', caption: 'حلاوة الأيام تزداد بابتسامتكِ اللطيفة' },
+    { url: 'input_file_6.png', caption: 'حضور طاغٍ وتميز لا يشبهه أحد' },
   ];
 
   useEffect(() => {
@@ -91,8 +92,8 @@ const App: React.FC = () => {
         <BubbleBackground />
         <FloatingHearts />
         <div className="relative z-10 animate-fade-in bg-white/20 backdrop-blur-md p-12 rounded-[4rem] shadow-2xl border border-white/30">
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full border-4 border-white shadow-xl overflow-hidden animate-bounce bg-white/50 flex items-center justify-center">
-             <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=300&auto=format&fit=crop" alt="Noorscho" className="w-full h-full object-cover" />
+          <div className="w-40 h-40 mx-auto mb-8 rounded-full border-4 border-white shadow-xl overflow-hidden animate-bounce bg-white/50 flex items-center justify-center">
+             <img src="input_file_7.png" alt="Noorscho" className="w-full h-full object-cover" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
             إلى المتألقة {name}
@@ -168,14 +169,14 @@ const App: React.FC = () => {
         <Timeline />
 
         <section className="max-w-6xl mx-auto my-24 px-4">
-          <h3 className="text-4xl font-bold text-white text-center mb-12 drop-shadow-lg">من إبداعاتكِ المختارة 🖼️</h3>
+          <h3 className="text-4xl font-bold text-white text-center mb-12 drop-shadow-lg">ألبوم التألق 🖼️</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {photos.map((photo, index) => (
               <div 
                 key={index} 
                 className="group relative overflow-hidden rounded-[2.5rem] shadow-2xl bg-white p-4 transform transition-all duration-500 hover:-translate-y-4 hover:rotate-2"
               >
-                <img src={photo.url} alt={photo.caption} className="w-full h-80 object-cover rounded-[2rem] transition-transform duration-700 group-hover:scale-110" />
+                <img src={photo.url} alt={photo.caption} className="w-full h-96 object-cover rounded-[2rem] transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-red-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                   <p className="text-white font-bold text-2xl">{photo.caption}</p>
                 </div>
