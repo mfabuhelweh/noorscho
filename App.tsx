@@ -15,13 +15,12 @@ const App: React.FC = () => {
   const [timeTogether, setTimeTogether] = useState({ years: 0, days: 0, hours: 0, mins: 0, secs: 0 });
 
   const photos = [
-    { url: '/input_file_0.png', caption: 'إطلالة ساحرة في أجمل الأمسيات' },
-    { url: '/input_file_1.png', caption: 'ذكاء وجمال يجتمعان في ملامحكِ' },
-    { url: '/input_file_2.png', caption: 'رقي وبساطة تعكس جمال روحكِ' },
-    { url: '/input_file_3.png', caption: 'إشراقة الطبيعة تكتمل بوجودكِ' },
-    { url: '/input_file_4.png', caption: 'أناقة تخطف الأنظار في كل خطوة' },
-    { url: '/input_file_5.png', caption: 'حلاوة الأيام تزداد بابتسامتكِ اللطيفة' },
-    { url: '/input_file_6.png', caption: 'حضور طاغٍ وتميز لا يشبهه أحد' },
+    { url: 'https://instagram.famm3-2.fna.fbcdn.net/v/t51.82787-15/626091770_18083190692244207_2186939487113242451_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzgyNjc4NTIzMzMxNjQ4MDg2Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkxNi5zZHIuQzMifQ%3D%3D&_nc_ohc=DZVJsy6-4SwQ7kNvwEBsw7e&_nc_oc=Adlw63QBj09e1syF3bH8E9nFHPZbpJJnQxWIEe7MkNj0iEP6UWDpbl7zucj4hbGiTek&_nc_ad=z-m&_nc_cid=1341&_nc_zt=23&_nc_ht=instagram.famm3-2.fna&_nc_gid=0ehNAW9GbvbbRRrpCBQR8g&oh=00_Aft0lxRDrwx7dnI6KACsjRkbT5J5nuKBtXHqrqmqmnhZew&oe=69962BA1', caption: 'إطلالة ساحرة في أجمل الأمسيات' },
+    { url: 'https://instagram.famm3-2.fna.fbcdn.net/v/t51.82787-15/518245582_18062505368244207_8364152911258976001_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=MzY3NzI0ODE0MDUxOTU2NzY0MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=eRC7audHzy4Q7kNvwGkeDEh&_nc_oc=AdmbUFY4SIUkK7tyCg_jDw9MfyFexN-VvgYYqbHo9pXmy3rL5e9JT6BfxcZm6qQ9GlY&_nc_ad=z-m&_nc_cid=1341&_nc_zt=23&_nc_ht=instagram.famm3-2.fna&_nc_gid=0ehNAW9GbvbbRRrpCBQR8g&oh=00_Afuf-aIk0lcxIamM3AwFonPasisLrpwy8ub74zYNXc0yrQ&oe=69962D51', caption: 'ذكاء وجمال يجتمعان في ملامحكِ' },
+    { url: 'https://instagram.famm3-1.fna.fbcdn.net/v/t51.82787-15/625720510_18083190683244207_7107566429349859951_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzgyNjc4NTIzMzI0OTM4NjkxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkxNi5zZHIuQzMifQ%3D%3D&_nc_ohc=Ir2otAmAwR8Q7kNvwF0VyN5&_nc_oc=Adm4smW5QEbKQzIuj7J7EPOcFneEN9UdqKr5gyt4OCpyIDG4X4Dm_gjaMk8v9ICV64s&_nc_ad=z-m&_nc_cid=1341&_nc_zt=23&_nc_ht=instagram.famm3-1.fna&_nc_gid=0ehNAW9GbvbbRRrpCBQR8g&oh=00_Aft9LLyKC9tomk0M299xy5njyeGQK_mHEg3LO88zz8M0Hg&oe=69962736', caption: 'رقي وبساطة تعكس جمال روحكِ' },
+    { url: 'https://instagram.famm3-2.fna.fbcdn.net/v/t51.82787-15/561464186_18071424206244207_8754704218607141753_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzczOTA3ODg5Mjk4NTMwNjk2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MTUyNC5zZHIuQzMifQ%3D%3D&_nc_ohc=fOyG-XxN-xQQ7kNvwH7oZPR&_nc_oc=AdlWa_ppTMocdkb_Y2y8B0xpnlF4yp_0DG2Vlqxra4aaIDDANdYUjyY6ROrMnUPHU1Q&_nc_ad=z-m&_nc_cid=1341&_nc_zt=23&_nc_ht=instagram.famm3-2.fna&_nc_gid=0ehNAW9GbvbbRRrpCBQR8g&oh=00_AfuCuHts-LU2em_FJX5C99ON8BC24BC59OLjcpOTP9Q3UQ&oe=69965820', caption: 'إشراقة الطبيعة تكتمل بوجودكِ' },
+    { url: 'https://instagram.famm3-1.fna.fbcdn.net/v/t51.75761-15/504591524_18060125243244207_2943654120449088020_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=MzY1ODYyOTg4MDMzNzI5MzQ1OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkwNy5zZHIuQzMifQ%3D%3D&_nc_ohc=LR4AOefKk5oQ7kNvwGR6K4I&_nc_oc=Adk_Lwah7kLqC6ZSpHavUy5EMroDACMiWzjWCXP889ghviGYb8DiDTB5N9oTJTDcF34&_nc_ad=z-m&_nc_cid=1341&_nc_zt=23&_nc_ht=instagram.famm3-1.fna&_nc_gid=0ehNAW9GbvbbRRrpCBQR8g&oh=00_Afvfj26u9yWKok30gwa5xevTsFcXoSEOmg4bHVyaT0dGlg&oe=69962553', caption: 'أناقة تخطف الأنظار في كل خطوة' },
+    { url: 'https://instagram.famm3-3.fna.fbcdn.net/v/t51.82787-15/572924599_18074548133244207_9097907530105972366_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=Mzc1OTIzMzMwOTI1NjQ2NzY0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzl4MTUwNS5zZHIuQzMifQ%3D%3D&_nc_ohc=YpZclRc0AAsQ7kNvwH4hQx8&_nc_oc=Adk-P2gVBN5EWkMIvIIc-CArXtq5Gxn3PjsDzdmcnvONwtGepEeCw3R4hN_GJP7cN4M&_nc_ad=z-m&_nc_cid=1341&_nc_zt=23&_nc_ht=instagram.famm3-3.fna&_nc_gid=0ehNAW9GbvbbRRrpCBQR8g&oh=00_Afsxu0o2TJJqxBFRVEjB1R3HHauOvFgBb3B9xAjAx5Elyw&oe=699641E2', caption: 'حلاوة الأيام تزداد بابتسامتكِ اللطيفة' },
   ];
 
   useEffect(() => {
@@ -93,7 +92,7 @@ const App: React.FC = () => {
         <FloatingHearts />
         <div className="relative z-10 animate-fade-in bg-white/20 backdrop-blur-md p-12 rounded-[4rem] shadow-2xl border border-white/30">
           <div className="w-40 h-40 mx-auto mb-8 rounded-full border-4 border-white shadow-xl overflow-hidden animate-bounce bg-white/50 flex items-center justify-center">
-             <img src="input_file_7.png" alt="Noorscho" className="w-full h-full object-cover" />
+             <img src="https://instagram.famm3-2.fna.fbcdn.net/v/t51.82787-15/518245582_18062505368244207_8364152911258976001_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=MzY3NzI0ODE0MDUxOTU2NzY0MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=eRC7audHzy4Q7kNvwGkeDEh&_nc_oc=AdmbUFY4SIUkK7tyCg_jDw9MfyFexN-VvgYYqbHo9pXmy3rL5e9JT6BfxcZm6qQ9GlY&_nc_ad=z-m&_nc_cid=1341&_nc_zt=23&_nc_ht=instagram.famm3-2.fna&_nc_gid=0ehNAW9GbvbbRRrpCBQR8g&oh=00_Afuf-aIk0lcxIamM3AwFonPasisLrpwy8ub74zYNXc0yrQ&oe=69962D51" alt="Noorscho" className="w-full h-full object-cover" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
             إلى المتألقة {name}
